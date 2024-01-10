@@ -27,6 +27,8 @@ app.use(cors({
     'https://udayrana428.github.io/Personal_Portfolio/',    // Replace with your second origin
     // Add more origins as needed
   ],
+  methods: 'GET, POST, OPTIONS, PUT, PATCH, DELETE',
+  allowedHeaders: 'Content-Type, Authorization',
 }));
 app.use(express.json());
 
